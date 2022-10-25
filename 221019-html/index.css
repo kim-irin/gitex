@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Noto Sans KR',-apple-system,BlinkMacSystemFont,
+    "Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 1382px;
+    height: 400px;
+}
+
+div {
+    font-weight: normal;
+    position: fixed;
+
+}
+.logo img {
+    display: block;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 20px;
+
+
+}
+
+ul {
+
+}
+
+li {
+    display: inline-block;
+    margin-top: -50px;
+    padding: 0px 20px;
+
+}
+
+li a {
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+}
+
+p {
+    color: rgb(182, 182, 182);
+    font-size: 17px;
+}

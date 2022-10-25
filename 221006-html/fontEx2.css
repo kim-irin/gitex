@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+#h1 {
+    /* background-color: coral; */
+    font-family:'HY견고딕', '맑은 고딕', '돋움', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#txt1 {
+    text-shadow: 10px 10px 10px #777;/* x축 y축 번짐 색상 */
+    
+}
+
+#txt2 {
+    text-shadow: -10px -10px 5px red;
+}
+
+#txt3 {
+    text-shadow: 0 10px 5px #777;
+    text-shadow: 0 -10px 5px #777;
+    
+}
+
+#txt4 {
+    text-shadow: 10px 10px 0px orange;/* x축 y축 (번짐생략) 색상 */
+    
+}
+
+#txt5 {
+    color: blueviolet;
+    text-shadow: 0 10px;/* 번짐 생략. 색상은 생략시 글자의 색을 따라감 */
+    
+}

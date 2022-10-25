@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+body {
+    font-family: 'HY견고딕', '맑은 고딕', '돋움', sans-serif;
+    font-size: 30px;
+    color: #31C6D4;
+}
+
+form > fieldset {
+    background-color: #B1B2FF;
+}
+
+form > fieldset > legend {
+    background-color: #FFE3E1;
+}
+
+/* 서체 관련 특성은 폼 관련 요소에 직접 적용 */
+form > fieldset > button {
+    font-family: 'HY견고딕', '맑은 고딕', '돋움', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+form > fieldset > input {
+    font-family: '맑은 고딕', '돋움', sans-serif;
+    font-size: 20px;
+    color: tomato;
+    background-color: #ddd;
+}
+
+/* form > fieldset > input[type="text"] {} 속성(특성) 선택자 input 요소가 가지고 있는 속성들 중에
+type의 값이 text인 선택자*/
+form > fieldset > input[type=text]:hover {
+    background-color: orange;
+}
+
+form > fieldset > button:hover {
+    background-color: maroon;
+}
+
+/* :checked 라디오 버튼이나 체크 박스에 체크가 되면 */
+form > fieldset > input[name=box]:checked + label {
+    /* 인접형제 선택자 : 기준 요소의 바로 뒤에 오는 형제 관계 선택자 하나 <-> ~ */
+    background-color: #EDE4E0;
+    color: #000;
+}

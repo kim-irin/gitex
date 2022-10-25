@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>table style Ex2</title>
+    <style>
+        /* h1 {
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: center;
+            width: 600px; height: 300px;
+            border: 2px solid seagreen;
+
+        }
+        caption {
+            background-color: seagreen;
+            color: aliceblue;
+            padding: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        td {
+            border: 2px solid seagreen;
+            background-color: orange;
+            padding: 0 10px;
+
+        }
+        table .suBhead {
+            background-color: violet;
+            border-top-width: 5px;
+        }
+        a {
+            background-color: red;
+            color: aliceblue;
+            text-decoration: none;
+        } */
+
+        body {
+            background-color: beige;
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+
+        }
+        table caption {
+            background-color: cadetblue;
+            font-weight: bold;
+            color: #fff;
+            padding: 4px 0;
+        }
+        table td {
+            width: 120px;
+            border: 2px solid olive;
+            border-top: none;
+            background-color: rgb(231, 172, 172);
+        }
+        table td .block {
+            display: block;
+            font-size: 14px;
+        }
+        table td a {
+            text-decoration: none;
+            background-color: red;
+            color: #fff;
+        }
+        table td a:hover {
+            background-color: aqua;
+            color: blue;
+        }
+        table .empty_bg {
+            background-color: transparent;
+        }
+        table .foot_bg td {
+            background-color: crimson;
+            color: #fff;
+            border-top: 10px solid olive;
+        }
+    </style>
+</head>
+<body>
+    <h1>table style Ex2</h1>
+    <table>
+        <thead>
+            <caption>소 cow</caption>
+            </thead>
+            <tbody>
+            <tr>
+                <td>소머리</td>
+                <td>목심</td>
+                <td>등심<span class="block">(살치살 &middot; <a href="#">꽃등심</a>)</span></td>
+                <td>채끝살</td>
+                <td>우둔<span class="block">(홍두깨살)</span></td>
+            </tr>
+            <tr>
+                <td rowspan="4" class="empty_bg"></td>
+                <td rowspan="2">앞다리<span class="block">(부채살)</span></td>
+                <td>갈비<span class="block">(안창살 &middot; 제비추리)</span></td>
+                <td>안심</td>
+                <td rowspan="2">설도</td>
+            </tr>
+            <tr>
+                <td colspan="2">양지<span class="block">(차돌박이 &middot; 우삼겹)</span></td>
+            </tr>
+            <tr>
+                <td>사태</td>
+                <td rowspan="2" colspan="2" class="empty_bg"></td>
+                <td>사태<span class="block">(아롱사태)</span></td>
+            </tr>
+            <tr class="foot_bg">
+                <td>우족</td>
+                <td>우족</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!-- 컨트롤 d 그 단어만 잡을수있음 순차적 -->

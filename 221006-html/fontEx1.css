@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+#body {
+    font-family: '돋움', sans-serif;
+    font-size: 16px;
+}
+
+
+#li1 {
+    font-weight:bold;
+    font-size: 14px;
+    color: blue;
+}
+
+#li2 {
+    font-family: '굴림', sans-serif;
+    font-style: italic;
+    color: #E8334D;
+}
+
+#li3 {
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+#li4 {
+    text-indent: 10px;
+    font-size: 15px;
+}
+
+#li5 {
+    font-weight:bold;
+    line-height: 50px;
+    color: green;
+}
+
+#li6 {
+    font-weight:bold;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 20px;
+
+    background-color: orange;
+}

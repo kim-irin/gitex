@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>box-sizing Ex</title>
+    <style>
+        /* 
+        가로 400 세로200
+        요소중앙정렬
+        바깥여백 위20 아래30
+        안쪽여백 위20 아래20 오른쪽30 왼쪽30
+        테두리 위10 아래5 오른쪽10 왼쪽10
+         */
+
+         .box {
+            width: 400px; height: 200px;
+            margin: 20px auto 30px;
+            padding: 20px 30px;
+            border: 10px solid red;
+            border-bottom-width: 5px;
+         }
+         .box1 {
+            box-sizing: content-box;
+         }
+         .box2 {
+            box-sizing: border-box;
+         }
+    </style>
+</head>
+<body>
+    <h1>box-sizing Ex</h1>
+    <div class="box box1">
+        <h3>box-sizing:content-box</h3>
+        <p>W400 + M(0) + P(30+30) + B(10+10) = 480px</p>
+    </div>
+    <div class="box box2">
+        <h3>box-sizing:border-box</h3>
+        <p>W400 + M(0) = 400px</p>
+    </div>
+</body>
+</html>
