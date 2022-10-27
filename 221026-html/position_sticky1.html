@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>position sticky 1</title>
+    <style>
+        body, h1, h2 {
+            margin: 0;
+        }
+        header,footer {
+            background-color: rgb(170, 255, 0);
+            height: 100px;
+            /* box-sizing: border-box; */
+            padding: 10px;
+        }
+        footer {
+            background-color: yellow;
+        }
+        main {
+            background-color: blue;
+            /* float: left; */
+            /* overflow: hidden; */
+        }
+        /* main::after{} */
+
+        /* 미리 만들어 놓은 다음 필요할때마다 html에 적용해 사용하기 위해서 그때그때 class에 넣어두면 편함 */
+        .clearFix::after{
+            content: "";
+            display: block;
+            clear: both;            
+        }
+        main article {
+            background-color: rgb(0, 255, 255);
+            float: left;
+            height: 3000px;
+            width: 70%;
+        }
+        main aside {
+            background-color: red;
+            float: left;
+            height: 200px;
+            width: 30%;
+
+            position: sticky;
+            /* 부모 요소들 중 overflow:hidden이 적용되어 있으면 작동하지 않음
+            height값이 %인 경우도 작동하지 않음 */
+            top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>position:sticky</h1>
+        <h2>header</h2>
+    </header>
+    <main class="clearFix">
+        <article>
+        <h1>main contents</h1>
+        </article>
+        <aside>
+            <h2>sticky sideber</h2>
+        </aside>
+    </main>
+    <footer>
+        <h2>footer</h2>
+    </footer>
+</body>
+</html>

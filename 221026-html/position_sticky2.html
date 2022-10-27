@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>position sticky 2</title>
+    <style>
+        /* base */
+        .clearFix::after{
+            content: "";
+            display: block;
+            clear: both;            
+        }
+        body, h1, h2 {
+            margin: 0;
+            color: rgb(73, 73, 73);
+        }
+        a {
+            text-decoration: none;
+        }
+
+        header,footer {
+            background-color: rgb(255, 250, 204);
+            height: 100px;
+            padding: 10px;
+        }
+        main {
+            background-color: #DDD;
+            border: 10px solid rgb(73, 73, 73);
+        }
+
+        main article {
+            background-color: rgb(211, 255, 255);
+            float: left;
+            height: 800px;
+            width: 80%;
+            color: rgb(73, 73, 73);
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+        }
+        main aside {
+            background-color: rgb(255, 203, 203);
+            float: left;
+            height: 3000px;
+            width: 20%;
+        }
+        main article .relative {
+            background-color: hsl(39, 100%, 90%);
+            float: left;
+            padding: 4px 10px;
+            position: relative;/* relative와 float 동시에 적용시 float인식*/
+            top: 20px;/* 위치값이 없으면 아무 적용 안됨 */
+        }
+        main article .fixed {
+            background-color: rgb(213, 255, 213);
+            float: left;
+            padding: 4px 10px;
+            position: fixed;/* fixed와 float 동시 적용시 포지션이 인식 */
+            left: 117px;
+            top: 130px;
+        }
+        main article .absolute {
+            background-color: rgb(255, 206, 249);
+            float: left;
+            padding: 4px 10px;
+            position: absolute;/* absolute와 float 동시 적용시 포지션이 인식 */
+            top: 0; left: 187px;
+
+        }
+        main article .sticky {
+            background-color: rgb(210, 203, 255);
+            float: left;
+            padding: 4px 10px;
+            position: sticky;/* 부모 요소가 스크롤에 따라 화면 밖으로 넘어가면 함께 넘어감 */
+            top: 0; left: 319px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>position:sticky2</h1>
+        <h2>header</h2>
+    </header>
+    <main class="clearFix">
+        <article>
+        <div class="relative">relative</div>
+        <div class="fixed">fixed</div>
+        <div class="absolute">absolute</div>
+        <div class="sticky">sticky</div>
+        </article>
+        <aside>
+            <h2>aside</h2>
+        </aside>
+    </main>
+    <footer>
+        <h2>footer</h2>
+    </footer>
+</body>
+</html>
