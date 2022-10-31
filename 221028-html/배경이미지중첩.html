@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>배경이미지 중첩 background multi</title>
+    <style>
+        body {
+            text-align: center;
+
+            /* 중첩은 쉽표로 구분. 먼저 작성된 값이 위에 보여짐
+            background-image: url(images/line.jpg), url(images/watercolor.webp);
+            background-repeat: no-repeat ,repeat;
+            background-position: 50%; 쉼표없이 작성시 둘다 적용
+            background-attachment: fixed, scroll;
+            background-size: 900px, auto;*/
+
+            background: url(images/line.jpg) no-repeat fixed 50% / 900px, url(images/watercolor.webp);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>배경이미지 중첩 background multi</h1>
+</body>
+</html>
